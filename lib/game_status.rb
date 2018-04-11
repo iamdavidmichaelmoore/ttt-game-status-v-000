@@ -59,9 +59,5 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
-    "X"
-  elsif !won?(board)
-    "O"
-  end
+  
 end
