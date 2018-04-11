@@ -45,7 +45,7 @@ def full?(board)
   if board.include?("X") && board.include?("O") && board.include?(" ")
     false
     #checks if the board is full and a draw
-  elsif (!(board.none?{|check| check += " "})) && board.include?("X") && board.include?("O")
+  elsif (!(board.include?(" "))) && board.include?("X") && board.include?("O")
     true
   end
 end
@@ -55,5 +55,5 @@ def draw?(board)
 end
 
 def over?(board)
-  full?(board) && draw?(board) 
+  full?(board) && draw?(board)
 end
