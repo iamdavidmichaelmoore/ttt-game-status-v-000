@@ -59,12 +59,6 @@ def over?(board)
 end
 
 def winner(board)
-  winning = won?(board)
-  if winning && winning[0].include?("X")
-    "X"
-  elsif winning && winning[0].include?("O")
-    "O"
-  else
-    winning
-  end
+  puts winning = won?(board)
+  
 end
