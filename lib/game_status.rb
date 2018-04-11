@@ -52,5 +52,5 @@ end
 
 def draw?(board)
   #if full?(board)
-  end
+  #end
 end
