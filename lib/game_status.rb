@@ -60,5 +60,5 @@ end
 
 def winner(board)
   puts winning = won?(board)
-  
+
 end
