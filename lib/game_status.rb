@@ -40,6 +40,8 @@ def won?(board)
   false
 end
 
+#checks if the board has a game in progress or not full
+# and checks if the board is full and a draw.
 def full?(board)
   #check if there is an in-progress game
   if board.include?("X") && board.include?("O") && board.include?(" ")
@@ -50,14 +52,17 @@ def full?(board)
   end
 end
 
+#checks if the board is full without a winner
 def draw?(board)
   full?(board) && !won?(board)
 end
 
+#checks if the game was won or a draw
 def over?(board)
   won?(board) || draw?(board)
 end
 
+#checks if he game has a winner
 def winner(board)
   puts winning = won?(board)
 
