@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   win_combo = []
-  # loops through the WIN_COMBINATIONS constant to grab each
+  # loops through the WIN_COMBINATION constant to grab each
   # winning combination so that they can be stored and checked
   # further down in this method against the board
   WIN_COMBINATIONS.select do |combo|
@@ -51,9 +51,6 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) == false && won?(board) == false
-    false
-  else
-    full?(board) && won?(board)
+  if full?(board) && won?(board)
   end
 end
