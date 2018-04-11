@@ -64,6 +64,6 @@ end
 
 #checks if he game has a winner
 def winner(board)
-  puts winning = won?(board)
+  won?(board)
 
 end
