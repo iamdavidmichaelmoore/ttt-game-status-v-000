@@ -64,6 +64,10 @@ end
 
 #checks if he game has a winner
 def winner(board)
-  won?(board)
+  if won?(board)
+
+  else
+    nil
+  end
 
 end
