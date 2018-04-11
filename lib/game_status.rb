@@ -65,7 +65,12 @@ end
 #checks if he game has a winner
 def winner(board)
   if won?(board)
-
+    winning_play = won?(board)
+    first_play = winning_play[0]
+    if board[first_play] == "X"
+      "X"
+    elsif board[first_play] == "O
+      "
   else
     nil
   end
