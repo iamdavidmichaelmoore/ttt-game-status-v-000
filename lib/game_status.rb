@@ -57,3 +57,11 @@ end
 def over?(board)
   won?(board) || draw?(board)
 end
+
+def winner?(board)
+  if won?(board)
+    "X"
+  elsif !won?(board)
+    "O"
+  end
+end
