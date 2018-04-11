@@ -59,7 +59,6 @@ def over?(board)
 end
 
 def winner(board)
-  game_
   win = won?(board)
   if win[0] == "X"
     "X"
