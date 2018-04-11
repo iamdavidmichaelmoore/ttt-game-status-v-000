@@ -60,9 +60,9 @@ end
 
 def winner(board)
   winning = won?(board)
-  if winning && winning[0] == "X"
+  if winning && winning[0].include?("X")
     "X"
-  elsif winning && winning[0] == "O"
+  elsif winning && winning[0].include?("O")
     "O"
   else
     !won?(board)
