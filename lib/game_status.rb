@@ -61,10 +61,10 @@ end
 def winner(board)
   game_
   win = won?(board)
-  if win[0] = "X"
-    "X"
-  elsif win[0] = "O"
-    "O"
+  if win[0] == "X"
+    return "X"
+  elsif win[0] == "O"
+    return "O"
   else
     !won?(board)
   end
