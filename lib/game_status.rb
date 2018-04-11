@@ -69,8 +69,10 @@ def winner(board)
     first_play = winning_play[0]
     if board[first_play] == "X"
       "X"
-    elsif board[first_play] == "O
-      "
+    elsif board[first_play] == "O"
+      "O"
+    end
+  end
   else
     nil
   end
