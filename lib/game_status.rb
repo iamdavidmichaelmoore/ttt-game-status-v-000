@@ -72,7 +72,6 @@ def winner(board)
     elsif board[first_play] == "O"
       "O"
     end
-  end
   else
     nil
   end
